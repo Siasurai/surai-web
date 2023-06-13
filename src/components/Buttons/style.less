@@ -1,0 +1,52 @@
+@import '../../assets/variables.less';
+
+.btn {
+  display: inline-block;
+  padding: 14px 50px;
+  text-decoration: none;
+  color: @color-black;
+  border-radius: 50px;
+  transition: all .15s linear;
+  font-weight: 500 !important;
+}
+
+.btn-primary {
+  background: @color-green;
+  &:hover {
+    color: @color-green;
+    outline: 1px solid @color-green;
+    background: @color-white;
+    box-shadow: -4px 4px @color-green;
+    transform: translate(4px, -4px);
+    // border-color: @color-green;
+  }
+  &:active {
+    color: @color-green;
+    outline: 1px solid @color-green;
+    box-shadow: -2px 2px @color-green;
+    transform: translate(2px, -2px);
+  }
+}
+.btn-soc {
+  display: inline-block;
+  max-height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  background: @color-white;
+  &:hover {
+    outline: 1px solid @color-green;
+    background: @color-white;
+    box-shadow: -4px 4px @color-green;
+    transform: translate(4px, -4px);
+    transition: all .15s linear;
+  }
+  &:active {
+    outline: 1px solid @color-green;
+    box-shadow: -2px 2px @color-green;
+    transform: translate(2px, -2px);
+    transition: all .15s linear;
+  }
+  svg:hover {
+    fill: @color-green;
+  }
+}

@@ -1,0 +1,99 @@
+@import '../../assets/variables.less';
+
+
+.footer-row {
+  min-height: 350px;
+  position: relative;
+  p {
+    max-width: 85%;
+    position: relative;
+    z-index: 10;
+  }
+  .card {
+    background: @color-grey;
+    position: relative;
+    overflow: hidden;
+    #bg-1 {
+      top: 0;
+      right: 0;
+      background: @color-blue;
+      animation: blue 18s linear infinite;
+    }
+    #bg-2 {
+      top: 30%;
+      right: 0;
+      background: @color-purple;
+      animation: purple 18s linear infinite;
+    }
+    #bg-3 {
+      top: 50%;
+      right: 0;
+      background: @color-orange;
+      animation: orange 18s linear infinite;
+    }
+    .bg {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 10em;
+      height: 10em;
+      filter: blur(60px);
+      border-radius: 50%;
+      z-index: 0;
+
+      @keyframes blue {
+        0% {
+          transform: rotateZ(0deg);
+        }
+        50% {
+          transform: rotateZ(40deg);
+          top: 60%;
+          right: 20%;
+        } 
+        100% {
+          transform: rotateZ(0deg);
+          top: 0;
+          right: 0;
+        }      
+      }
+
+      @keyframes purple {
+        0% {
+          transform: rotateZ(0deg);
+        }
+        50% {
+          transform: rotateZ(40deg);
+          top: 70%;
+          right: 40%;
+        } 
+        100% {
+          transform: rotateZ(0deg);
+          top: 30%;
+          right: 0;
+        }      
+      }
+
+      @keyframes orange {
+        0% {
+          transform: rotateZ(0deg);
+        }
+        50% {
+          transform: rotateZ(40deg);
+          top: 80%;
+          right: 60%;
+        } 
+        100% {
+          transform: rotateZ(0deg);
+          top: 50%;
+          right: 0;
+        }      
+      }
+    }
+  }
+  .m-top-64 {
+    display: flex;
+    gap: 32px;
+    position: relative;
+    z-index: 10;
+  }
+}
