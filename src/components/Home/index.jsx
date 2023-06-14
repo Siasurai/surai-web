@@ -1,5 +1,6 @@
 import React from 'react';
-import { Header } from '../Header/index';
+import { Header } from '../Header';
+import { Cards } from '../Cards';
 // import './style.css';
 
 export const Home = () => {
@@ -7,6 +8,7 @@ export const Home = () => {
   return (
     <>
     <Header />
+    <Cards/>
   </>
   )
 }
