@@ -3,6 +3,7 @@
 
 .header-row {
   min-height: 350px;
+  min-height: 450px;
   position: relative;
   p {
     max-width: 85%;
@@ -10,6 +11,7 @@
     z-index: 10;
   }
   .card {
+    height: 100%;
     background: @color-grey;
     position: relative;
     overflow: hidden;
@@ -17,19 +19,19 @@
       top: 0;
       right: 0;
       background: @color-blue;
-      animation: blue 18s linear infinite;
+      animation: blue 14s linear infinite;
     }
     #bg-2 {
       top: 30%;
       right: 0;
       background: @color-purple;
-      animation: purple 18s linear infinite;
+      animation: purple 14s linear infinite;
     }
     #bg-3 {
       top: 50%;
       right: 0;
       background: @color-orange;
-      animation: orange 18s linear infinite;
+      animation: orange 14s linear infinite;
     }
     .bg {
       content: '';
@@ -96,15 +98,15 @@
     position: relative;
     z-index: 10;
   }
-  .col-md-5 {
+  .col-md-4 {
     overflow: hidden;
     transition: all .19s linear;
-    .img-container {
+    .img-container-header {
       padding-inline: 15px;
       background-color: #FFD9C7;
       border-radius: 24px;
       transition: all .19s linear;
-      max-height: 500px;
+      max-height: 450px;
       img {
         width: 100%;
         height: 100%;
@@ -117,9 +119,9 @@
       }
     }
     &:hover + #logo-bg {
-      transform: translateY(10em);
+      transform: translateX(70%);
     }
-    &:hover .img-container {
+    &:hover .img-container-header {
       background-color: @color-blue;
     }
     &:hover img {
@@ -134,7 +136,10 @@
     height: 250px;
     bottom: -1.5em;
     left: 41em;
-    transition: all .19s linear;
+    transition: all .21s linear;
     z-index: 100;
+  }
+  .custom-cursor {
+    cursor: url('./img/cursor.svg'), auto;
   }
 }
