@@ -10,14 +10,15 @@ export const MainButton = ({src, innerText}) => {
 
 export const DownloadBtn = ({src, innerText, download}) => {
   return (
-      <a href={src} download={download} className='btn btn-primary' target="_blank">{innerText}</a>
+      <Link to={src} download={download} className='btn btn-primary' target="_blank">{innerText}</Link>
   )
 }
 
 export const SocialBtn = ({src, icon, alt}) => {
   return (
-      <a href={src} className='btn-soc' target="_blank">
+      <Link to={src} className='btn-soc' target="_blank">
         <img src={icon} alt={alt} />
-      </a>
+      </Link>
   )
 }
+
