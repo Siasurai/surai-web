@@ -1,5 +1,6 @@
 import React from 'react';
 import { SingleCard } from '../SingleCard';
+import { Popup } from '../Popup/';
 import Aukce from './img/aukce.png';
 import Granty from './img/nap.png';
 import AdAw from './img/adaw.png';
@@ -33,6 +34,7 @@ export const Cards = () => {
       />
       </div>
 
+      <Popup />
 
       <div className="row p-top-40 projects-row">  
       <SingleCard 
