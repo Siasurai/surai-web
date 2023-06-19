@@ -12,9 +12,9 @@ export const SingleCard = ({title, subtitle, img, bgColor, slug}) => {
           <h2>{title}</h2>
           <p>{subtitle}</p>
         </div>
-        <Link id="arowLink" to={slug}>
-        <img src={Arrow} alt="arrowIcon"/>
-      </Link>
+        <Link className='btn-more' to={slug} target='_blank'>
+         <img src={Arrow} alt={title}/>
+         </Link> 
       </div>
       <div className="img-container">
        <img src={img} alt="title" />
