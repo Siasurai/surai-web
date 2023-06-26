@@ -2,14 +2,17 @@
 
 .project-popup-row {
   #popupImage {
-    transition: all .4s linear;
+    transition: all .5s linear;
     display: flex;
     gap: 36px;
     .circle {
       min-width: 220px;
       height: 220px;
       border-radius: 50%;
-      background-color: @color-light-green;
+     transition: all .5s linear;
+      img {
+        max-width: 100%;
+      }
     }
   }
 }
